@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+   <meta name="author" content="Creative Tim">
+   <title>StonewallInternetServices-MGLD</title>
+   <!-- Favicon -->
+   <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+   <!-- Fonts -->
+   <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+   <!-- Icons -->
+   <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+   <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+   <!-- Argon CSS -->
+
+   <link rel="stylesheet" href="assets/css/argon.css?v=1.1.0" type="text/css">
+   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+   <!-- Sidenav -->
+   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+      <div class="scrollbar-inner">
+         <!-- Brand -->
+         <div class="sidenav-header d-flex align-items-center">
+            <a class="navbar-brand" href="dashboard.html">
+               <img alt = "logo" src="assets/images/blue.png" class="navbar-brand-img" alt="...">
+            </a>
+            <div class="ml-auto">
+               <!-- Sidenav toggler -->
+               <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+                  <div class="sidenav-toggler-inner">
+                     <i class="sidenav-toggler-line"></i>
+                     <i class="sidenav-toggler-line"></i>
+                     <i class="sidenav-toggler-line"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navbar-inner">
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+               <!-- Nav items -->
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="dashboard.html">
+                        <i class="ni ni-shop text-white"></i>
+                        <span class="nav-link-text text-white">Dashboards</span>
+                     </a>
+                     <div class="collapse" id="navbar-dashboards">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">Dashboard</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">Alternative</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="navbar-examples">
+                        <i class="ni ni-ungroup text-white"></i>
+                        <span class="nav-link-text">Client Management</span>
+                     </a>
+                     <div class="collapse" id="navbar-examples">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="add-tenant.html" class="nav-link">Add Dealer Group</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="add-practice.html" class="nav-link">Add Practice</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="list.html" class="nav-link">List</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#navbar-components" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="navbar-components">
+                        <i class="ni ni-ui-04 text-white"></i>
+                        <span class="nav-link-text">User Management</span>
+                     </a>
+                     <div class="collapse" id="navbar-components">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="add-user.html" class="nav-link">Add User</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="user-list.html" class="nav-link">List</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#setting" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="navbar-examples">
+                        <i class="ni ni-settings-gear-65 text-white"></i>
+                        <span class="nav-link-text">Setting</span>
+                     </a>
+                     <div class="collapse" id="setting">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="user-permission.html" class="nav-link"><i class="ni ni-atom text-white"></i>User
+                                 Role & Permission</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="my-profile.html" class="nav-link"><i class="ni ni-single-02 text-white"></i>My
+                                 Profile</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="change-password.html" class="nav-link"><i
+                                    class="ni ni-key-25 text-white"></i>change Password</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="notification.html" class="nav-link"><i
+                                    class="ni ni-folder-17 text-white"></i>Notification</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+               <!-- Divider -->
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Main content -->
+   <div class="main-content" id="panel">
+      <!-- Topnav -->
+      <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+         <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <!-- Search form -->
+               <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                  <div class="form-group mb-0">
+                     <div class="input-group input-group-alternative input-group-merge">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Search" type="text">
+                     </div>
+                  </div>
+                  <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main"
+                     aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                  </button>
+               </form>
+               <!-- Navbar links -->
+               <ul class="navbar-nav align-items-center ml-md-auto">
+                  <li class="nav-item d-xl-none">
+                     <!-- Sidenav toggler -->
+                     <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
+                        data-target="#sidenav-main">
+                        <div class="sidenav-toggler-inner">
+                           <i class="sidenav-toggler-line"></i>
+                           <i class="sidenav-toggler-line"></i>
+                           <i class="sidenav-toggler-line"></i>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item d-sm-none">
+                     <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                        <i class="ni ni-zoom-split-in"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ni ni-bell-55"></i>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                        <!-- Dropdown header -->
+                        <div class="px-3 py-3">
+                           <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong>
+                              notifications.</h6>
+                        </div>
+                        <!-- List group -->
+                        <div class="list-group list-group-flush">
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-1.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>2 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-2.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>3 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-3.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>5 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Your posts have been liked a lot.</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-4.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>2 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-5.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>3 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <!-- View all -->
+                        <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ni ni-ungroup"></i>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default dropdown-menu-right">
+                        <div class="row shortcuts px-4">
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-red">
+                                 <i class="ni ni-calendar-grid-58"></i>
+                              </span>
+                              <small>Calendar</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                                 <i class="ni ni-email-83"></i>
+                              </span>
+                              <small>Email</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                                 <i class="ni ni-credit-card"></i>
+                              </span>
+                              <small>Payments</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                                 <i class="ni ni-books"></i>
+                              </span>
+                              <small>Reports</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                                 <i class="ni ni-pin-3"></i>
+                              </span>
+                              <small>Maps</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
+                                 <i class="ni ni-basket"></i>
+                              </span>
+                              <small>Shop</small>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="media align-items-center">
+                           <span class="avatar avatar-sm rounded-circle">
+                              <img alt="Image placeholder" src="assets/images/team-4.jpg">
+                           </span>
+                           <div class="media-body ml-2 d-none d-lg-block">
+                              <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                           </div>
+                        </div>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header noti-title">
+                           <h6 class="text-overflow m-0">Welcome!</h6>
+                        </div>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-single-02"></i>
+                           <span>My profile</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-settings-gear-65"></i>
+                           <span>Settings</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-calendar-grid-58"></i>
+                           <span>Activity</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-support-16"></i>
+                           <span>Support</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-user-run"></i>
+                           <span>Logout</span>
+                        </a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header -->
+      <!-- Header -->
+      <div class="header bg-primary pb-6">
+         <div class="container-fluid">
+            <div class="header-body">
+               <div class="row align-items-center py-4">
+                  <div class="col-lg-6 col-7">
+                     <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                           <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                           <li class="breadcrumb-item font-weight-600"><a href="#">Bench Mark</a></li>
+                        </ol>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--6">
+         <div class="card mb-4">
+            <!-- Card body -->
+            <div class="card-body">
+               <!-- Form groups used in grid -->
+               <div class="row ">
+                  <div class="col-sm-12">
+                     <form method="post" class="f1">
+                        <div class="f1-steps">
+                           <div class="f1-progress">
+                              <div class="f1-progress-line" data-now-value="25" data-number-of-steps="4"
+                                 style="width: 25%;"></div>
+                           </div>
+                           <div class="f1-step active">
+                              <div class="f1-step-icon"><i class="fa fa-user"></i></div>
+                              <p>Notes</p>
+                           </div>
+                           <div class="f1-step">
+                              <div class="f1-step-icon"><i class="fa fa-cog"></i></div>
+                              <p>Revenue</p>
+                           </div>
+                           <div class="f1-step">
+                              <div class="f1-step-icon"><i class="fa fa-credit-card"></i></div>
+                              <p>Costs</p>
+                           </div>
+                           <div class="f1-step">
+                              <div class="f1-step-icon"><i class="fa fa-cogs"></i></div>
+                              <p>Difinitions</p>
+                           </div>
+                        </div>
+                        <fieldset style="display: block;">
+                           <div class="card-header border-0">
+                              <h2 class="mb-0 text-center ">Notes for 2006 Benchmark Survey</h2>
+                           </div>
+                           <div class="row pt-3 pb-3">
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">New Clients</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>New clients refer to those acquired by the business during the 2005/06 financial
+                                    year, passive and active. These may include risk, investment and/or finance clients,
+                                    not previously serviced by the business.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">
+                                    Clients Lost (during the year)</small>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Clients lost refers to clients that either left, or were removed or sold by, the
+                                    business during the 2005/06 financial year</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Existing, Active Clients</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number of active clients that were retained by the business over the 2005/06
+                                    financial year. Active clients refer to those who receive ongoing advice and/or plan
+                                    reviews during the year. </p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Existing, Passive Clients</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number of passive clients that were retained by the business over the 2005/06
+                                    financial year. Passive clients refer to those who receive no ongoing advice and/or
+                                    plan reviews during the year, only admin support</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">New Revenue, New Clients</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Revenue from new clients for the 2005/06 financial year for each product category
+                                    listed in the table</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">New Revenue, Existing Clients</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>New revenue from existing clients for the 2005/06 financial year for each product
+                                    category listed in the table</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">Recurring Revenue </h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Recurring revenue from existing clients for the 2005/06 financial year for each
+                                    product category listed in the table</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">
+                                    All Upfront Revenue (top 50 clients)</small>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The total upfront revenue for 2005/06 for the 50 highest revenue producing clients
+                                    in the business</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">
+                                    Recurring Revenue (top 50 clients)</small>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The total recurring revenue for 2005/06 for the 50 highest revenue producing clients
+                                    in the business</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">
+                                    Funds Under Management at beginning of year (1 July 2005)</small>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Funds Under Management (FUM) at the start of the 2005/06 financial year (as of 1
+                                    July 2005) for all clients, excluding direct property investments</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">
+                                    Funds Under Management at end of year (30 June 2006)</small>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Funds Under Management (FUM) at the end of the 2005/06 financial year (as of 30 June
+                                    2006) for all clients, excluding direct property investments</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">Working Owners</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Working owners are actively involved in the business on a day to day basis, in any
+                                    hands on role including financial planning, practice management, business
+                                    development or a salaried support role. The number of FTE (full time equivalent)
+                                    working owners and their remuneration is required.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">Number of Working Owners (FTE's) utilised as a Financial Planner in
+                                    the business </h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Of the Working owners in the business, the number (expressed as a FTE) that work as
+                                    a financial planner. For example if practice has one working owner, who spends on
+                                    average, three days per week as a financial planner, this figure would be 0.6</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-1">Staff Costs - Financial Planners</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed financial planners
+                                    (not including working owners) in the business during 2005/06. This include base
+                                    salaries, superannuation, allowances and bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Staff Costs - Paraplanners</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed paraplanners in the
+                                    business during 2005/06. This include base salaries, superannuation, allowances and
+                                    bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Staff Costs - Practice Managers</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed practice managers
+                                    in the business during 2005/06. This include base salaries, superannuation,
+                                    allowances and bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Staff Costs - Business Development</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed business
+                                    development people in the business during 2005/06. This include base salaries,
+                                    superannuation, allowances and bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Staff Costs - Support Staff / Admin</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed support and
+                                    administration staff in the business during 2005/06. This include base salaries,
+                                    superannuation, allowances and bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Staff Costs - Accounts / Payroll </h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>The number (as full time equivalents) and total cost of employed accounts and
+                                    payroll staff in the business during 2005/06. This include base salaries,
+                                    superannuation, allowances and bonuses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Financial Planners</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for employed financial planners
+                                    (not including working owners) for 2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Paraplanners</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for employed paraplanners for
+                                    2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Practice Manager</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for employed practice managers for
+                                    2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Business Development</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for employed business development
+                                    managers for 2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Support Staff / Admin</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for support staff and
+                                    administration personnel for 2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Time Breakdown - Accounts / Payroll</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Time breakdown between client and non client time for employed accounts and payroll
+                                    personnel for 2005/06</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Non Working Owner Salary & Superannuation</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Non working owner salary and superannuation payments for the 2005/06 financial year,
+                                    which have been included as business expenses</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Non Working Owner Vehicle Expenses </h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Non working owner vehicle expenses including lease payments, allowances and running
+                                    expenses for the 2005/06 financial year, which have been included as business
+                                    expenses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Interest paid on Capital Borrowings</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Interest payments made on capital borrowings, whether or not they are directly
+                                    associated with the business, for the 2005/06 financial year, which have been
+                                    included as business expenses</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Payments to Non Working Relatives / Spouses</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Other payments made to relatives and/or spouses of owners who did not work in the
+                                    business during the 2005/06 financial year, which have been included as business
+                                    expenses.</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">Occupancy Costs (rent and outgoings)</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Refers to all occupancy costs including rent and all outgoings such as security,
+                                    power, gas and maintenance for the premises incurred during the 2005/06 financial
+                                    year</p>
+                              </div>
+                              <div class="col-sm-2">
+                                 <h4 class="mb-0">All Other General Costs (including items 26-29)</h4>
+                              </div>
+                              <div class="col-sm-10">
+                                 <p>Refers to all other - non occupancy and non staff costs - incurred by the business
+                                    during the 2005/06 financial year</p>
+                              </div>
+                           </div>
+                           <div class="f1-buttons">
+                              <div class="row">
+                                 <div class="col-sm-6 col-md-6 text-left">
+                                    <button type="button" class="btn btn-next common-btn btn-primary">Save &amp;
+                                       Continue Later</button>
+                                 </div>
+                                 <div class="col-sm-6 col-md-6 text-right">
+                                    <button type="button" class="btn btn-next common-btn btn-primary">Cancel</button>
+                                    <button type="button" class="btn btn-next common-btn btn-primary">Save &amp;
+                                       Continue </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                           <!--- start Revenue Block  ---->
+                           <section class="revenue-block ">
+                              <div class="card no_box_shodow">
+                                 <!-- Card header -->
+                                 <div class="card-header border-0">
+                                    <h2 class="mb-0 text-center">GENESYS PERFORMANCE BENCHMARK</h2>
+                                 </div>
+                                 <!-- Card body -->
+                                 <div class="card-body">
+                                    <div class="form-group row">
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label">Business name</label>
+                                       <div class="col-md-10">
+                                          <input class="form-control" type="text" placeholder="Business name"
+                                             id="Business name">
+                                       </div>
+                                    </div>
+                                    <div class="form-group row">
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label">Street Address</label>
+                                       <div class="col-md-10">
+                                          <input class="form-control" type="text" placeholder="Street Address"
+                                             id="Business name">
+                                       </div>
+                                    </div>
+                                    <div class="form-group row">
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label">City/Suburb</label>
+                                       <div class="col-md-5">
+                                          <input class="form-control" type="text" placeholder="City/Suburb"
+                                             id="Business name">
+                                       </div>
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label text-center">Post
+                                          code</label>
+                                       <div class="col-md-3">
+                                          <input class="form-control" type="text" placeholder="Post code"
+                                             id="Business name">
+                                       </div>
+                                    </div>
+                                    <div class=""></div>
+                                    <div class="form-group row">
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label">Contact Name</label>
+                                       <div class="col-md-5">
+                                          <input class="form-control" type="text" placeholder="Contact Name"
+                                             id="Business name">
+                                       </div>
+                                    </div>
+                                    <div class="form-group row">
+                                       <label for="example-text-input"
+                                          class="col-md-2 col-form-label form-control-label">Phone Number</label>
+                                       <div class="col-md-5">
+                                          <input class="form-control" type="text" placeholder="Business name"
+                                             id="Business name">
+                                       </div>
+                                    </div>
+                                    <h2 class="mb-4 w-75 pl-4 pr-4 mx-auto mt-4 text-center">Information for the 12
+                                       months end 30th June 2006 Figures are to0 be exclusive of GST</h2>
+                                    <div class="card bg-info text-white">
+                                       <div class="py-3 text-center">PLEASE REFER TO PAGE 3 FOR FURTHER EXPLAINATION AND
+                                          SURVEY RETURN </div>
+                                    </div>
+                                    <!-- Clients Profile table -->
+                                    <h2 class="mb-3">Client Profile</h2>
+                                    <div class="table-responsive dark-color">
+                                       <table class="table align-items-center table table-striped table-bordered">
+                                          <thead class="thead-light">
+                                             <tr>
+                                                <th colspan="3"></th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Number</h4>
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   1
+                                                </td>
+                                                <td colspan="2" class="border">
+                                                   <span class="text-muted">New Clients</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" id="validationCustom02">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   2
+                                                </td>
+                                                <td colspan="2">
+                                                   <span class="text-muted">clients Lost (during the year)</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" id="validationCustom02">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   3
+                                                </td>
+                                                <td colspan="2">
+                                                   <span class="text-muted">Existing,Active Clients</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" id="validationCustom02">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   4
+                                                </td>
+                                                <td colspan="2">
+                                                   <span class="text-muted">Existing,Passive Clients</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" id="validationCustom02">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td colspan="3">
+                                                   <h3 class="ml-5 pl-5 text-capitalize"> Total Number of clients </h3>
+                                                </td>
+                                                <td class="text-center">
+                                                   <strong>0</strong>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <!-- Total Revenue Breakdown table -->
+                                    <h2 class="mb-3 mt-4">Total Revenue Breakdown</h2>
+                                    <div class="table-responsive dark-color">
+                                       <table class="table align-items-center table table-striped table-bordered">
+                                          <thead class="thead-light">
+                                             <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Risk </h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Investment</h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Finance</h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Total</h4>
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   1
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">New Revenue - New Clients
+                                                   </span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   2
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">New Revenue - Existing Clients
+                                                   </span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   3
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">Recurring Revenue </span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td colspan="2">
+                                                   <h3 class="ml-5 pl-5 text-capitalize"> Total Revenue </h3>
+                                                </td>
+                                                <td>
+                                                   <strong>$ <span class="ml-5">0</span></strong>
+                                                </td>
+                                                <td>
+                                                   <strong>$ <span class="ml-5">0</span></strong>
+                                                </td>
+                                                <td>
+                                                   <strong>$ <span class="ml-5">0</span></strong>
+                                                </td>
+                                                <td>
+                                                   <strong>$ <span class="ml-5">0</span></strong>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <!-- Client Revenue Breakdown table -->
+                                    <h2 class="mb-3  mt-4">Top 50 Client Revenue Breakdown</h2>
+                                    <div class="table-responsive dark-color">
+                                       <table class="table align-items-center table table-striped table-bordered">
+                                          <thead class="thead-light">
+                                             <tr>
+                                                <th scope="col" colspan="2"></th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Number</h4>
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   1
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">All Upfront Revenue (top 50 Clients)</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   2
+                                                </td>
+                                                <td>
+                                                   <span class="text-muted">Reccuring Revenue (top 50 Clients)</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td colspan="2">
+                                                   <h3 class="ml-5 pl-5 text-capitalize text-capitalize"> Total Revenue
+                                                   </h3>
+                                                </td>
+                                                <td>
+                                                   <strong class="pl-3">$ </strong>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <!-- Funds under Management table -->
+                                    <h2 class="mb-3  mt-4">Funds under Management</h2>
+                                    <div class="table-responsive dark-color">
+                                       <table class="table align-items-center table table-striped table-bordered">
+                                          <tbody>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   1
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">Funds Under Management at begining of year
+                                                      (1 Jul 2005)</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   2
+                                                </td>
+                                                <td>
+                                                   <span class="text-muted">Funds Under Management at end of year (30
+                                                      Jun 2006)</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                    <!-- Total Revenue Breakdown table -->
+                                    <h2 class="mb-3 mt-4">Working Owners</h2>
+                                    <div class="table-responsive dark-color">
+                                       <table class="table align-items-center table table-striped table-bordered">
+                                          <thead class="thead-light">
+                                             <tr>
+                                                <th></th>
+                                                <th></th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">FTE's </h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-capitalize">Salary</h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-wrap text-capitalize">Vehicle Expenses
+                                                   </h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-wrap text-capitalize">Super Contributions
+                                                   </h4>
+                                                </th>
+                                                <th>
+                                                   <h4 class="text-center text-wrap text-capitalize">Total Working Owner
+                                                      Remum</h4>
+                                                </th>
+                                             </tr>
+                                          </thead>
+                                          <tbody>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   1
+                                                </td>
+                                                <td class="border">
+                                                   <span class="text-muted">Working Owners</span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="0.00">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="$">
+                                                </td>
+                                             </tr>
+                                             <tr>
+                                                <td class="border text-center">
+                                                   2
+                                                </td>
+                                                <td colspan="5">
+                                                   <span class="text-muted">Number of Working Owners (FTE's) utilised as
+                                                      a Financial Planner in the business
+                                                   </span>
+                                                </td>
+                                                <td>
+                                                   <input type="text" class="form-control" value="0:00">
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </div>
+                           </section>
+                           <!--- end Revenue Block  ---->
+                           <div class="f1-buttons">
+                              <div class="row">
+                                 <div class="col-sm-8 text-left">
+                                    <button type="button" class="btn common-btn green-btn btn-warning">Save &amp;
+                                       Continue Later</button>
+                                    <button type="button"
+                                       class="btn common-btn red-btn deactive-btn skip btn-success">Cancel</button>
+                                 </div>
+                                 <div class="col-sm-4 text-right">
+                                    <button type="button" class="btn common-btn  cancel-btn">Back</button>
+                                    <button type="button" class="btn btn-next common-btn btn-primary">Save &amp;
+                                       Continue</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                           <!--- start costs  Block  ---->
+                           <section class="costs-block">
+                              <div class="card no_box_shodow">
+                                 <!-- staff costs table -->
+                                 <div class="card-header border-0">
+                                    <h2 class="mb-3 mt-4">Staff Costs <span class="font-weight-normal">(excluding
+                                          owners)</span></h2>
+                                 </div>
+                                 <div class="table-responsive dark-color">
+                                    <table class="table align-items-center table table-striped table-bordered">
+                                       <thead class="thead-light">
+                                          <tr>
+                                             <th scope="col" colspan="3"></th>
+                                             <th>
+                                                <h4 class="text-center ">FTE's</h4>
+                                             </th>
+                                             <th>
+                                                <h4 class="text-center text-capitalize ">Total Staff Costs</h4>
+                                             </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="border text-center">
+                                                1
+                                             </td>
+                                             <td colspan="2" class="border">
+                                                <span class="text-muted">Employed Financial Planners </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                2
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Paraplanners</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                3
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Practice Manager</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                4
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Business Development</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                5
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Support Staff / Admin</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                6
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Accounts / Payroll</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="0:00">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td colspan="4">
+                                                <h3 class="ml-5 text-capitalize"> Total</h3>
+                                             </td>
+                                             <td>
+                                                <strong>$</strong>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <!-- Clients Profile table -->
+                                 <div class="card-header">
+                                    <h2 class="mb-3 mt-4">
+                                       <h2 class="mb-3 mt-4">Staff Time Breakdown <span
+                                             class="font-weight-normal">(excluding owners)</span></h2>
+                                    </h2>
+                                 </div>
+                                 <div class="table-responsive dark-color">
+                                    <table class="table align-items-center table table-striped table-bordered">
+                                       <thead class="thead-light">
+                                          <tr>
+                                             <th scope="col" colspan="3"></th>
+                                             <th>
+                                                <h4 class="text-center text-capitalize">Existing Clients
+                                                </h4>
+                                             </th>
+                                             <th>
+                                                <h4 class="text-center text-capitalize">New Clients
+                                                </h4>
+                                             </th>
+                                             <th>
+                                                <h4 class="text-center text-capitalize">Admin / Other
+                                                </h4>
+                                             </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="border text-center">
+                                                1
+                                             </td>
+                                             <td colspan="2" class="border">
+                                                <span class="text-muted">Employed Financial Planners </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                2
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Paraplanners</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                3
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Practice Manager</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                4
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Business Development</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                5
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Support Staff / Admin</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                6
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Accounts / Payroll</span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="0%">
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control text-center" value="100%">
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <!-- normalise business comparisons table -->
+                                 <div class="card-header">
+                                    <h2 class="mb-3 mt-4">Adjustments & Add Backs to normalise business comparisons</h2>
+                                 </div>
+                                 <div class="table-responsive dark-color">
+                                    <table class="table align-items-center table table-striped table-bordered">
+                                       <thead class="thead-light">
+                                          <tr>
+                                             <th scope="col" colspan="3"></th>
+                                             <th>
+                                                <h4 class="text-center text-capitalize">Total</h4>
+                                             </th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td class="border text-center">
+                                                1
+                                             </td>
+                                             <td colspan="1" class="border">
+                                                <span class="text-muted">Non Working Owner Salary & Superannuation
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                2
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Non Working Owner Vehicle Expenses
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                3
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Interest paid on Capital Borrowings
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                4
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted">Payments to Non Working Relatives / Spouses
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td colspan="3">
+                                                <h3 class="ml-5 pl-5 text-capitalize"> Total Adjustments & Add Backs
+                                                </h3>
+                                             </td>
+                                             <td>
+                                                <strong>$</strong>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 <!-- normalise business comparisons table -->
+                                 <div class="card-header">
+                                    <h2 class="mb-3 mt-4"> Other Business Costs
+                                    </h2>
+                                 </div>
+                                 <div class="table-responsive dark-color">
+                                    <table class="table align-items-center table table-striped table-bordered">
+                                       <tbody>
+                                          <tr>
+                                             <td class="border text-center">
+                                                1
+                                             </td>
+                                             <td colspan="2" class="border">
+                                                <span class="text-muted"><strong>Occupancy Costs (rent and
+                                                      outgoings)</strong>
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                2
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted"><strong>Total Staff Costs (as above)</strong>
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                3
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted"><strong>All General Costs (including cells
+                                                      26-29 above)</strong>
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td class="border text-center">
+                                                4
+                                             </td>
+                                             <td colspan="2">
+                                                <span class="text-muted"><strong>TOTAL BUSINESS COSTS</strong>
+                                                </span>
+                                             </td>
+                                             <td>
+                                                <input type="text" class="form-control" value="$">
+                                             </td>
+                                          </tr>
+                                          <tr>
+                                             <td colspan="3">
+                                                <h3 class="ml-5 pl-5 text-capitalize"> Total Adjustments & Add Backs
+                                                </h3>
+                                             </td>
+                                             <td>
+                                                <strong>$</strong>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                              </div>
+                           </section>
+                           <!--- end costs Block  ---->
+                           <div class="f1-buttons">
+                              <div class="row">
+                                 <div class="col-sm-8 text-left">
+                                    <button type="button" class="btn common-btn green-btn btn-warning">Save &amp;
+                                       Continue Later</button>
+                                    <button type="button"
+                                       class="btn common-btn red-btn deactive-btn skip btn-success">Cancel</button>
+                                 </div>
+                                 <div class="col-sm-4 text-right">
+                                    <button type="button" class="btn common-btn  cancel-btn">Back</button>
+                                    <button type="button" class="btn btn-next common-btn btn-primary">Save &amp;
+                                       Continue</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                        <fieldset>
+                           <div class="card no_box_shadow">
+                              <!-- Card header -->
+                              <div class="card-header border-0">
+                                 <h2 class="mb-0 text-center ">Benchmark Definitions</h2>
+                              </div>
+                              <!-- Card body -->
+                              <div class="card-body">
+                                 <h3>Active Clients</h3>
+                                 <p class="card-text mb-4">These are clients that require direct attention from advisers
+                                    in the business, whether it be face to face consultations, phone calls and/or
+                                    strategy reviews. These clients may be charged ongoing fees for the management and
+                                    review of their portfolios. Clients managed solely by support staff, without direct
+                                    contact with advisers are not considered actively managed clients.</p>
+                                 <h3>Passive Clients</h3>
+                                 <p class="card-text mb-4">These are clients that require direct attention from advisers
+                                    in the business, whether it be face to face consultations, phone calls and/or
+                                    strategy reviews. These clients may be charged ongoing fees for the management and
+                                    review of their portfolios. Clients managed solely by support staff, without direct
+                                    contact with advisers are not considered actively managed clients.</p>
+                                 <h3>New Revenue, New Clients</h3>
+                                 <p class="card-text mb-4">This represents revenue streams generated from clients
+                                    acquired during the 2005/06 financial year. This may arise from planning fees,
+                                    placement of new funds and pre payments for ongoing services and/or advice.</p>
+                                 <h3>New Revenue, Actively Managed Clients</h3>
+                                 <p class="card-text mb-4">This represents new revenue streams generated during the
+                                    2005/06 financial year for existing, actively managed clients. This may arise from
+                                    the placement of new funds, entry fee commissions resulting from a switch of funds
+                                    and/or a new service offering. </p>
+                                 <h3>Recurring Revenue</h3>
+                                 <p class="card-text mb-4">This represents recurring revenue streams generated during
+                                    the last financial year. The most common stream is trail commissions and annual
+                                    review fees. It does not include revenue arising from either new clients and/or new
+                                    funds being introduced.</p>
+                                 <h3>Full Time Equivalent (FTE) </h3>
+                                 <p class="card-text mb-4">A full time equivalent (FTE) is defined as one person working
+                                    5 days per week in the business, 100% dedicated on activities directly associated
+                                    with the business. For example, a part time adviser working 3 days per week on
+                                    average, is expressed as 0.6 of an FTE. An employee working 4 days per week and
+                                    another working 2 days per week, equate to 1.2 FTE's in total. </br>
+                                    An owner who works, on average, 3 days per week in the business and dedicates the
+                                    remaining 2 days to other business activities / interests is defined a 0.6 of an
+                                    FTE, even though they may be drawing a salary equivalent to a full time manager or
+                                    adviser. </p>
+                              </div>
+                           </div>
+                           <div class="f1-buttons">
+                              <div class="row">
+                                 <div class="col-sm-8 text-left">
+                                    <button type="button" class="btn common-btn green-btn btn-warning">Save &amp;
+                                       Continue Later</button>
+                                    <button type="button"
+                                       class="btn common-btn red-btn deactive-btn skip btn-success">Cancel</button>
+                                 </div>
+                                 <div class="col-sm-4 text-right">
+                                    <button type="button" class="btn common-btn  cancel-btn btn-danger">Back</button>
+                                    <button type="button" class="btn btn-next common-btn btn-success">Submit</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </fieldset>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+      <footer>
+         © Copyright 2019 StonewallInternetServices-MGLD. All Rights Reserved.
+      </footer>
+   </div>
+   <!-- Argon Scripts -->
+   <!-- Core -->
+   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+   <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+   <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+   <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+   <!-- Argon JS -->
+   <script src="assets/js/argon.js?v=1.1.0"></script>
+   <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

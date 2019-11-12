@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
+   <meta name="author" content="Creative Tim">
+   <title>StonewallInternetServices-MGLD</title>
+   <!-- Favicon -->
+   <link rel="icon" href="assets/img/brand/favicon.png" type="image/png">
+   <!-- Fonts -->
+   <link rel="stylesheet" href="assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+   <!-- Icons -->
+   <link rel="stylesheet" href="assets/vendor/nucleo/css/nucleo.css" type="text/css">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css">
+   <!-- Argon CSS -->
+   <link rel="stylesheet" href="assets/css/argon.css?v=1.1.0" type="text/css">
+   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+   <!-- HTML5 shim and Respond.js IE8 support of HTML5 -->
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+   <!-- Sidenav -->
+   <nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+      <div class="scrollbar-inner">
+         <!-- Brand -->
+         <div class="sidenav-header d-flex align-items-center">
+            <a class="navbar-brand" href="dashboard.html">
+               <img alt="logo" src="assets/images/blue.png" class="navbar-brand-img" alt="...">
+            </a>
+            <div class="ml-auto">
+               <!-- Sidenav toggler -->
+               <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin" data-target="#sidenav-main">
+                  <div class="sidenav-toggler-inner">
+                     <i class="sidenav-toggler-line"></i>
+                     <i class="sidenav-toggler-line"></i>
+                     <i class="sidenav-toggler-line"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="navbar-inner">
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+               <!-- Nav items -->
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" href="dashboard.html">
+                        <i class="ni ni-shop text-white"></i>
+                        <span class="nav-link-text text-white">Dashboards</span>
+                     </a>
+                     <div class="collapse" id="navbar-dashboards">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">Dashboard</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="#" class="nav-link">Alternative</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#navbar-examples" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="navbar-examples">
+                        <i class="ni ni-ungroup text-white"></i>
+                        <span class="nav-link-text">Client Management</span>
+                     </a>
+                     <div class="collapse" id="navbar-examples">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="add-tenant.html" class="nav-link">Add Dealer Group</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="add-practice.html" class="nav-link">Add Practice</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="list.html" class="nav-link">List</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#user-management" data-toggle="collapse" role="button"
+                        aria-expanded="false" aria-controls="navbar-examples">
+                        <i class="ni ni-ui-04 text-white"></i>
+                        <span class="nav-link-text">User Management</span>
+                     </a>
+                     <div class="collapse" id="user-management">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="add-user.html" class="nav-link">Add User</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="user-list.html" class="nav-link">User List</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#setting" data-toggle="collapse" role="button" aria-expanded="false"
+                        aria-controls="navbar-examples">
+                        <i class="ni ni-settings-gear-65 text-white"></i>
+                        <span class="nav-link-text">Setting</span>
+                     </a>
+                     <div class="collapse" id="setting">
+                        <ul class="nav nav-sm flex-column">
+                           <li class="nav-item">
+                              <a href="user-permission.html" class="nav-link"><i class="ni ni-atom text-white"></i>User
+                                 Role & Permission</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="my-profile.html" class="nav-link"><i class="ni ni-single-02 text-white"></i>My
+                                 Profile</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="change-password.html" class="nav-link"><i
+                                    class="ni ni-key-25 text-white"></i>change Password</a>
+                           </li>
+                           <li class="nav-item">
+                              <a href="notification.html" class="nav-link"><i
+                                    class="ni ni-folder-17 text-white"></i>Notification</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+               </ul>
+               <!-- Divider -->
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- Main content -->
+   <div class="main-content" id="panel">
+      <!-- Topnav -->
+      <nav class="navbar navbar-top navbar-expand navbar-dark bg-primary border-bottom">
+         <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <!-- Search form -->
+               <form class="navbar-search navbar-search-light form-inline mr-sm-3" id="navbar-search-main">
+                  <div class="form-group mb-0">
+                     <div class="input-group input-group-alternative input-group-merge">
+                        <div class="input-group-prepend">
+                           <span class="input-group-text"><i class="fas fa-search"></i></span>
+                        </div>
+                        <input class="form-control" placeholder="Search" type="text">
+                     </div>
+                  </div>
+                  <button type="button" class="close" data-action="search-close" data-target="#navbar-search-main"
+                     aria-label="Close">
+                     <span aria-hidden="true">×</span>
+                  </button>
+               </form>
+               <!-- Navbar links -->
+               <ul class="navbar-nav align-items-center ml-md-auto">
+                  <li class="nav-item d-xl-none">
+                     <!-- Sidenav toggler -->
+                     <div class="pr-3 sidenav-toggler sidenav-toggler-dark" data-action="sidenav-pin"
+                        data-target="#sidenav-main">
+                        <div class="sidenav-toggler-inner">
+                           <i class="sidenav-toggler-line"></i>
+                           <i class="sidenav-toggler-line"></i>
+                           <i class="sidenav-toggler-line"></i>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="nav-item d-sm-none">
+                     <a class="nav-link" href="#" data-action="search-show" data-target="#navbar-search-main">
+                        <i class="ni ni-zoom-split-in"></i>
+                     </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ni ni-bell-55"></i>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right py-0 overflow-hidden">
+                        <!-- Dropdown header -->
+                        <div class="px-3 py-3">
+                           <h6 class="text-sm text-muted m-0">You have <strong class="text-primary">13</strong>
+                              notifications.</h6>
+                        </div>
+                        <!-- List group -->
+                        <div class="list-group list-group-flush">
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-1.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>2 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-2.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>3 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-3.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>5 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Your posts have been liked a lot.</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-4.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>2 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">Let's meet at Starbucks at 11:30. Wdyt?</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <a href="#!" class="list-group-item list-group-item-action">
+                              <div class="row align-items-center">
+                                 <div class="col-auto">
+                                    <!-- Avatar -->
+                                    <img alt="Image placeholder" src="assets/images/team-5.jpg"
+                                       class="avatar rounded-circle">
+                                 </div>
+                                 <div class="col ml--2">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                       <div>
+                                          <h4 class="mb-0 text-sm">John Snow</h4>
+                                       </div>
+                                       <div class="text-right text-muted">
+                                          <small>3 hrs ago</small>
+                                       </div>
+                                    </div>
+                                    <p class="text-sm mb-0">A new issue has been reported for Argon.</p>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <!-- View all -->
+                        <a href="#!" class="dropdown-item text-center text-primary font-weight-bold py-3">View all</a>
+                     </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="ni ni-ungroup"></i>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-dark bg-default dropdown-menu-right">
+                        <div class="row shortcuts px-4">
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-red">
+                                 <i class="ni ni-calendar-grid-58"></i>
+                              </span>
+                              <small>Calendar</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-orange">
+                                 <i class="ni ni-email-83"></i>
+                              </span>
+                              <small>Email</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-info">
+                                 <i class="ni ni-credit-card"></i>
+                              </span>
+                              <small>Payments</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-green">
+                                 <i class="ni ni-books"></i>
+                              </span>
+                              <small>Reports</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-purple">
+                                 <i class="ni ni-pin-3"></i>
+                              </span>
+                              <small>Maps</small>
+                           </a>
+                           <a href="#!" class="col-4 shortcut-item">
+                              <span class="shortcut-media avatar rounded-circle bg-gradient-yellow">
+                                 <i class="ni ni-basket"></i>
+                              </span>
+                              <small>Shop</small>
+                           </a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <ul class="navbar-nav align-items-center ml-auto ml-md-0">
+                  <li class="nav-item dropdown">
+                     <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="media align-items-center">
+                           <span class="avatar avatar-sm rounded-circle">
+                              <img alt="Image placeholder" src="assets/images/team-4.jpg">
+                           </span>
+                           <div class="media-body ml-2 d-none d-lg-block">
+                              <span class="mb-0 text-sm  font-weight-bold">John Snow</span>
+                           </div>
+                        </div>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header noti-title">
+                           <h6 class="text-overflow m-0">Welcome!</h6>
+                        </div>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-single-02"></i>
+                           <span>My profile</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-settings-gear-65"></i>
+                           <span>Settings</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-calendar-grid-58"></i>
+                           <span>Activity</span>
+                        </a>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-support-16"></i>
+                           <span>Support</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#!" class="dropdown-item">
+                           <i class="ni ni-user-run"></i>
+                           <span>Logout</span>
+                        </a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <!-- Header -->
+      <!-- Header -->
+      <div class="header bg-primary pb-6">
+         <div class="container-fluid">
+            <div class="header-body">
+               <div class="row align-items-center py-4">
+                  <div class="col-lg-6 col-7">
+                     <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
+                        <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                           <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                           <li class="breadcrumb-item font-weight-600"><a href="#">Tenant Management</a></li>
+                           <li class="breadcrumb-item font-weight-500 active" aria-current="page">List</li>
+                        </ol>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Page content -->
+      <div class="container-fluid mt--6">
+         <div class="card mb-4">
+            <div class="card-body">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <a class="company-logo float-left mr-4" href="#"><img src="assets/images/company-logo.png"
+                           alt="logo"></a>
+                     <label>
+                        <h3 class="company-title">MockSB</h3>
+                     </label>
+                     <a href="#" class="common-btn green-btn btn float-right" data-toggle="modal"
+                        data-target="#AddEducation"><i class="fa fa-plus mr-1"></i>Add Company</a>
+                     <div class="col-lg-12 row mb-2">
+                        <div class="link-box float-left mr-3 mb-3">
+                           <a href="#" class="common-btn bg-primary mr-2 " data-toggle="modal"
+                              data-target="#AddEducation">Show/hide</a>
+                           <a href="#" class="common-btn bg-primary" data-toggle="modal"
+                              data-target="#AddEducation">Export</a>
+                        </div>
+                        <div class="show-entries">
+                           <form class="form-inline">
+                              Show
+                              <select class="form-control mr-1 ml-2">
+                                 <option>1</option>
+                                 <option>2</option>
+                                 <option>3</option>
+                                 <option>4</option>
+                                 <option>5</option>
+                                 <option>6</option>
+                                 <option>7</option>
+                                 <option>8</option>
+                                 <option>9</option>
+                                 <option>10</option>
+                              </select>
+                              Entries
+                           </form>
+                        </div>
+                     </div>
+                     <div class="white-box shadow">
+                        <div class="table-responsive">
+                           <table id="tree-table" class="table table-striped">
+                              <thead>
+                                 <tr>
+                                    <th>Company Name</th>
+                                    <th>Email</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                 </tr>
+                                 <tr>
+                                    <th>
+                                       <input type="text" value="" class="form-control">
+                                    </th>
+                                    <th>
+                                       <input type="text" value="" class="form-control">
+                                    </th>
+                                    <th>
+                                       <input type="text" value="" class="form-control">
+                                    </th>
+                                    <th>
+                                       <input type="text" value="" class="form-control">
+                                    </th>
+                                    <th>
+                                       <input type="text" value="" class="form-control">
+                                    </th>
+                                    <th class="text-nowrap">
+                                       <a href="#" class="mlr-5">
+                                          <img src="assets/images/search.png" alt="" />
+                                       </a>
+                                       <a href="#" class="mlr-5">
+                                          <img src="assets/images/remove.png" alt="" />
+                                       </a>
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr data-id="1" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       MockSB
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="Company-edit.html" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr class="child" data-id="2" data-parent="1" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-industry"></i>
+                                       </div>
+                                       ABM Industries
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9540</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="primary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Login">
+                                          <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                       </a>
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr class="child" data-id="2" data-parent="1" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-industry"></i>
+                                       </div>
+                                       Biggby Coffee
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9540</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="primary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Login">
+                                          <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                       </a>
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr class="child" data-id="2" data-parent="1" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-industry"></i>
+                                       </div>
+                                       Alibaba
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9540</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="primary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Login">
+                                          <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                       </a>
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr class="child" data-id="2" data-parent="1" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-industry"></i>
+                                       </div>
+                                       Amezon
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9540</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="primary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Login">
+                                          <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                       </a>
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr data-id="7" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       McKesson Corporation
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr data-id="8" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Berkshire Hathaway
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+
+                                    </td>
+                                 </tr>
+                                 <tr data-id="9" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Walmart
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="10" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       A. O. Smith
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="11" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Abbott Laboratories
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="12" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Academi
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="13" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Accuride Corporation
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-active">Active</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="14" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Amway
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                                 <tr data-id="15" data-parent="0" data-level="1">
+                                    <td class="text-nowrap" data-column="name">
+                                       <div class="user-pic">
+                                          <i class="fa fa-building"> </i>
+                                       </div>
+                                       Analog Devices
+                                    </td>
+                                    <td>support@gmail.com</td>
+                                    <td>(800) 346-9580</td>
+                                    <td>XYZ</td>
+                                    <td>
+                                       <span class="status-inactive">Inactive</span>
+                                    </td>
+                                    <td class="text-nowrap">
+                                       <a href="javascript:void(0)" class="secondary-btn outline" data-toggle="tooltip"
+                                          data-placement="top" title="Edit">
+                                          <i class="fa fa-pencil"></i>
+                                       </a>
+                                       <a href="Company-details.html" class="primary-btn outline" data-toggle="modal"
+                                          data-target="#modal-default" data-placement="top" title="View">
+                                          <i class="fa fa-eye"></i>
+                                       </a>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="clearfix"></div>
+                     <div class="row">
+                        <div class="col-6 col-sm-6 showing-entries">Showing 1 to 5 of 57</div>
+                        <div class="col-6 col-sm-6">
+                           <nav aria-label="Page navigation" class="text-right">
+                              <ul class="pagination float-right">
+                                 <li class="disabled">
+                                    <a href="#" aria-label="Previous">
+                                       <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                 </li>
+                                 <li class="active"><a href="#">1</a></li>
+                                 <li><a href="#">2</a></li>
+                                 <li><a href="#">3</a></li>
+                                 <li><a href="#">4</a></li>
+                                 <li><a href="#">5</a></li>
+                                 <li>
+                                    <a href="#" aria-label="Next">
+                                       <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer -->
+      <footer>
+         © Copyright 2019 StonewallInternetServices-MGLD. All Rights Reserved.
+      </footer>
+   </div>
+   </div>
+   </div>
+   </div>
+   <div class="row view-popup">
+      <div class="modal fade" id="modal-default" tabindex="-1" role="dialog" aria-labelledby="modal-default"
+         aria-hidden="true">
+         <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+            <div class="modal-content">
+               <div class="card-body">
+                  <div class="dealer-details-block">
+                     <form class="col-lg-12">
+
+                        <!-- User Information -->
+                        <div class="user-info-block">
+                           <!-- Card header -->
+                           <div class="card-header">
+                              <h2 class="mb-0">Dealer Details</h2>
+                           </div>
+
+                           <div class="row">
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label for="example-text-input"
+                                       class="col-form-label float-left mr-3 form-control-label">Company Name :</label>
+                                    <span>MockSB</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label class=" col-form-label mr-3 form-control-label mr-3 float-left">Email
+                                       :</label>
+                                    <span>support@gmail.com</span>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label class="col-form-label form-control-label mr-3 float-left">Phone :</label>
+                                    <span>(800) 346-9580</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label class="col-form-label form-control-label mr-3  float-left">Country :</label>
+                                    <span>XYZ</span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label class="col-form-label form-control-label mr-3 float-left">State :</label>
+                                    <span>XYZ</span>
+                                 </div>
+                              </div>
+                              <div class="col-md-6 col-lg-6 col-12">
+                                 <div class="form-group">
+                                    <label class="col-form-label form-control-label mr-3  float-left">Notes:</label>
+                                    <p>Lorem ipsum is placeholder text commonly used in the graphic.</p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row float-right">
+                              <button type="button" class="btn btn-primary float-right"
+                                 data-dismiss="modal">Close</button> </div>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   </div>
+   <!-- Argon Scripts -->
+   <!-- Core -->
+   <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+   <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/vendor/js-cookie/js.cookie.js"></script>
+   <script src="assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+   <script src="assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
+   <script src="assets/js/jascript-treetable.js"></script>
+   <!-- Argon JS -->
+   <script src="assets/js/argon.js?v=1.1.0"></script>
+   <script src="assets/js/custom.js"></script>
+   <script>
+      $(document).ready(function () {
+         $('[data-toggle="tooltip"]').tooltip()
+         var win_hight = $(window).height();
+         $(".wrapper").css("min-height", win_hight - 186 + "px");
+      });
+   </script>
+</body>
+
+</html>
